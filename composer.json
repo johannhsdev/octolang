@@ -4,8 +4,9 @@
     "type": "library",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Johannhsdev"
+        { 
+            "name": "Johannhs Dev", 
+            "email": "johannsalas96@gmail.com" 
         }
     ],
     "require": {
