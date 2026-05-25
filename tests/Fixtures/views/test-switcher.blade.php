@@ -1,0 +1,1 @@
+<x-octolang::locale-switcher />

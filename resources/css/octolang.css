@@ -1,0 +1,63 @@
+@layer components {
+    .octolang-switcher {
+        @apply fixed top-4 right-4 z-[9999];
+        @apply flex flex-row gap-1.5 items-center;
+        @apply bg-white/85 backdrop-blur-sm;
+        @apply border border-black/[0.08] rounded-full;
+        @apply px-3 py-1.5 shadow-md;
+    }
+
+    .octolang-switcher form {
+        @apply m-0 p-0 inline;
+    }
+
+    .octolang-switcher button.octolang-btn {
+        all: unset;
+        box-sizing: border-box;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        position: relative;
+        @apply cursor-pointer text-[1.35rem] leading-none;
+        @apply inline-flex items-center justify-center;
+        @apply w-8 h-8 rounded-full;
+        @apply transition-all duration-150 ease-in-out;
+        @apply bg-transparent p-0 align-middle;
+    }
+
+    .octolang-switcher button.octolang-btn:focus,
+    .octolang-switcher button.octolang-btn:focus-visible,
+    .octolang-switcher button.octolang-btn:active {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .octolang-switcher button.octolang-btn--inactive {
+        @apply opacity-35 hover:opacity-80 hover:scale-105;
+    }
+
+    .octolang-switcher button.octolang-btn--active {
+        @apply opacity-100 scale-105;
+        @apply bg-slate-800 text-white;
+    }
+
+    .octolang-switcher button.octolang-btn--active .octolang-label {
+        @apply bg-slate-800 text-white;
+    }
+
+    .octolang-switcher button.octolang-btn--following-default {
+        box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.6) !important;
+    }
+
+    .octolang-status-dot {
+        @apply absolute right-0.5 bottom-0.5 w-2 h-2 rounded-full;
+        @apply bg-emerald-400 ring-1 ring-white;
+    }
+
+    .octolang-label {
+        @apply text-[0.6rem] font-mono font-bold;
+        @apply flex items-center justify-center w-full h-full;
+        @apply rounded-full text-slate-800 tracking-tight;
+    }
+}
